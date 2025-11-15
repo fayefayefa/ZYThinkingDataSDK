@@ -48,5 +48,14 @@ namespace ZYThinkingData.RunTime
         {
             TDAnalytics.Track(eventName, eventProperties);
         }
+
+        /// <summary>
+        /// 获取设备ID
+        /// </summary>
+        /// <returns></returns>
+        public string GetDeviceId()
+        {
+            return TDAnalytics.GetDeviceId();
+        }
     }
 }
