@@ -53,7 +53,7 @@ namespace ZYThinkingData.RunTime
         /// 获取设备ID
         /// </summary>
         /// <returns></returns>
-        public string GetDeviceId()
+        public static string GetDeviceId()
         {
             return TDAnalytics.GetDeviceId();
         }
