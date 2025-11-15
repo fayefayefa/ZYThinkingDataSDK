@@ -1,0 +1,13 @@
+{
+  "name": "com.dories.zythinkingdatasdk",
+  "displayName": "ZYThinkingDataSDK",
+  "author": {
+    "name": "Faye",
+    "url": "https://github.com/fayefayefa/ZYThinkingDataSDK.git"
+  },
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "description": "ZYThinkingDataSDK For ZY",
+  "dependencies": {
+  },
+}
