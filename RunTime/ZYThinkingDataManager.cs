@@ -30,13 +30,22 @@ namespace ZYThinkingData.RunTime
         }
 
         /// <summary>
-        /// 设置公共事件属性
+        /// 设置静态公共事件属性
         /// </summary>
         /// <param name="superProperties"></param>
         public static void SetSuperProperties(Dictionary<string, object> superProperties)
         {
             //设置公共事件属性
             TDAnalytics.SetSuperProperties(superProperties);
+        }
+
+        /// <summary>
+        /// 设置动态公共事件属性
+        /// </summary>
+        /// <param name="handler"></param>
+        public static void SetSetDynamicSuperProperties(TDDynamicSuperPropertiesHandler handler)
+        {
+            TDAnalytics.SetDynamicSuperProperties(handler);
         }
 
         /// <summary>
