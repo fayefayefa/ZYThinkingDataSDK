@@ -49,6 +49,24 @@ namespace ZYThinkingData.RunTime
         }
 
         /// <summary>
+        /// 设置用户属性
+        /// </summary>
+        /// <param name="userProperties"></param>
+        public static void UserSet(Dictionary<string, object> userProperties)
+        {
+            TDAnalytics.UserSet(userProperties);
+        }
+
+        /// <summary>
+        /// 用户属性只要设置一次
+        /// </summary>
+        /// <param name="userProperties"></param>
+        public static void UserSetOnce(Dictionary<string, object> userProperties)
+        {
+            TDAnalytics.UserSetOnce(userProperties);
+        }
+
+        /// <summary>
         /// 发送事件
         /// </summary>
         /// <param name="eventName"></param>
