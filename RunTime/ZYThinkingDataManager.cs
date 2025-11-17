@@ -75,6 +75,15 @@ namespace ZYThinkingData.RunTime
         {
             TDAnalytics.Track(eventName, eventProperties);
         }
+        
+        /// <summary>
+        /// 发送事件
+        /// </summary>
+        /// <param name="eventName"></param>
+        public static void Track(string eventName)
+        {
+            TDAnalytics.Track(eventName);
+        }
 
         /// <summary>
         /// 获取设备ID
