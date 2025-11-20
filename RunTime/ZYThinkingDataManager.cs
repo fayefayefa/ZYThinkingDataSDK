@@ -17,7 +17,10 @@ namespace ZYThinkingData.RunTime
         {
             TDAnalytics.Init(appid,server);
             //开启安装、启动、关闭事件的自动采集
-            TDAnalytics.EnableAutoTrack(TDAutoTrackEventType.All);
+            TDAnalytics.EnableAutoTrack(TDAutoTrackEventType.AppInstall);
+            TDAnalytics.EnableAutoTrack(TDAutoTrackEventType.AppCrash);
+            TDAnalytics.EnableAutoTrack(TDAutoTrackEventType.AppEnd);
+            TDAnalytics.EnableAutoTrack(TDAutoTrackEventType.AppStart);
         }
 
         /// <summary>
